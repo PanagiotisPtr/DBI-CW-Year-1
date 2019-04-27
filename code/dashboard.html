@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html id="main">
+<head>
+    <meta name="viewport" content="width=device-width"/>
+
+    <title>DBI Coursework</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- link javascript -->
+    <script type="text/javascript" src="dashboard.js"></script>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="TopBar">
+        <a href='index.html' id="DashboardBtn"><div class="AccentButton" style="float: left; margin-right: 2%;">Main Page</div></a>
+        <h1 class="Title">Dashboard</h1>
+    </div>
+
+    <!-- Add Actor -->
+    <div class="Card LeftSide" style="margin: 5%;">
+        <ul class="CardTable" id="ActorTable">
+            <h1 class="formTitle">Add Actor</h1> 
+            <form action="addActor.php" onsubmit="return actorFormValidation(this);" method="POST">
+                <span class="FormText">First Name:</span> <input name="actFirstName" type="text" class="TextInput" placeholder="Jeff"><br>
+                <span class="FormText">Last Name:</span>  <input name="actLastName" type="text" class="TextInput" placeholder="Anderson"><br>
+                <input class="SubmitButton" type="submit">
+            </form>
+        </ul>
+    </div>
+
+    <!-- Add Movie -->
+    <div class="Card RightSide" style="margin: 5%;">
+            <ul class="CardTable" id="MovieTable">
+                <h1 class="formTitle">Add Movie</h1>
+                <form action="addMovie.php" onsubmit="return movieFormValidation(this);" method="POST">
+                    <span class="FormText">Movie Title:</span> <input name="mvTitle" type="text" class="TextInput" placeholder="Deadpool"><br>
+                    <span class="FormText">Price:</span> <input name="mvPrice" type="text" class="TextInput" placeholder="19.99"><br>
+                    <span class="FormText">Year: </span> <input name="mvYear" type="text" class="TextInput" placeholder="2016"><br>
+                    <span class="FormText">Genre:</span> <input name="mvGenre" type="text" class="TextInput" placeholder="Action"><br>
+                    <h1 class="formTitle">Actor: </h1>
+                    <span class="FormText">First Name:</span> <input name="actFirstName" type="text" class="TextInput" placeholder="Ryan"><br>
+                    <span class="FormText">Last Name:</span>  <input name="actLastName" type="text" class="TextInput" placeholder="Reynolds"><br>
+                    <input class="SubmitButton" type="submit">
+                </form>
+            </ul>
+        </div>
+</body>
+</html>

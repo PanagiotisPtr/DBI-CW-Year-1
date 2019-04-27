@@ -1,0 +1,296 @@
+.TopBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 1%;
+    background-color: #303F9F;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (min-width: 900px) {
+    .formTitle {
+        font-family: 'Roboto', sans-serif;
+        margin-right: 30%;
+        margin-left: 42%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .formTitle {
+        font-family: 'Roboto', sans-serif;
+        margin-right: 30%;
+        margin-left: 30%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .AccentButton {
+        background-color: #D81B60;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+        padding: 1% 2% 1% 2%;
+        margin: 0% 0% 0% 2%;
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        float: left;
+        margin-right: 4%;
+        margin-top: 4%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .AccentButton {
+        background-color: #D81B60;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+        padding: 1% 2% 1% 2%;
+        margin: 0% 0% 0% 2%;
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        float: left;
+        margin-right: 2%;
+    }
+}
+
+.Title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .Card {
+        background-color: white;
+        box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .Card {
+        background-color: white;
+        width: 38vw;
+        height:auto;
+        display: inline-block;
+        box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+    }
+}
+
+.CardTable {
+    list-style-type: none;
+    padding: 2%;
+}
+
+@media screen and (min-width: 900px) {
+    .SearchBar {
+        width: 95%;
+        height: 4vw;
+        background: white;
+        border: none;
+        font-size: 2vw;
+        font-family: 'Roboto', sans-serif;
+        color: #63717f;
+        margin: 2%;
+        border-bottom: 1px solid #BDBDBD;
+    }
+
+    .TextInput {
+        width: 70%;
+        height: 2vw;
+        background: white;
+        border: none;
+        font-size: 1.5vw;
+        font-family: 'Roboto', sans-serif;
+        color: #63717f;
+        margin: 2%;
+        border-bottom: 1px solid #BDBDBD;
+    }
+
+    .FormText {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5vw;
+    }
+
+    .SubmitButton {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5vw;
+        margin-top: 5%;
+        margin-left: 42%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .SearchBar {
+        width: 95%;
+        height: 6vw;
+        background: white;;
+        border: none;
+        font-size: 4vw;
+        font-family: 'Roboto', sans-serif;
+        color: #63717f;
+        margin: 2%;
+        border-bottom: 1px solid #BDBDBD;
+    }
+
+    .TextInput {
+        width: 70%;
+        height: 6vw;
+        background: white;
+        border: none;
+        font-size: 4vw;
+        font-family: 'Roboto', sans-serif;
+        color: #63717f;
+        margin: 2%;
+        border-bottom: 1px solid #BDBDBD;
+    }
+
+    .FormText {
+        font-family: 'Roboto', sans-serif;
+        font-size: 4vw;
+    }
+
+    .SubmitButton {
+        font-family: 'Roboto', sans-serif;
+        font-size: 4vw;
+        margin-left: 42%;
+        margin-top: 5%;
+    }
+}
+
+.SearchBar:focus {
+    outline: none;
+    border-bottom: 1px solid #03A9F4;
+}
+
+.TextInput:focus {
+    outline: none;
+    border-bottom: 1px solid #03A9F4;
+}
+
+@media screen and (max-width: 600px) {
+    .CardItem .Header {
+        background-color: #303F9F;
+        color: white;
+        display: table;
+        height: fit-content;
+        width: 96.8%;
+        padding: 2%;
+        border-radius: 8px 8px 8px 8px;
+    }
+
+    .CardItem .Header.expand {
+        background-color: #303F9F;
+        color: white;
+        display: table;
+        height: fit-content;
+        padding: 2%;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .CardItem .Details {
+        display: block;
+        height: 0;
+        padding: 0%;
+        overflow: hidden;
+        line-height: 6vw;
+        transition: all .3s ease;
+    }
+
+    .CardItem .Details.invisible {
+        color: rgba(0, 0, 0, 0);
+    }
+
+    .CardItem .Button {
+        background-color: #D81B60;
+        color: white;
+        font-size: 3vw;
+        padding: 1% 2% 1% 2%;
+        margin: 0% 0% 0% 2%;
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+    }
+
+    .CardItem .Details ul {
+        list-style-type: circle;
+    }
+
+    .CardItem {
+        font-family: 'Roboto', sans-serif;
+        font-size: 4vw;
+        margin: 3%;
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        transition: all .3s ease;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .CardItem .Header {
+        background-color: #303F9F;
+        color: white;
+        display: table;
+        height: fit-content;
+        width: 96.8%;
+        padding: 2%;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .CardItem .Header.expand {
+        background-color: #303F9F;
+        color: white;
+        display: table;
+        height: fit-content;
+        padding: 2%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .CardItem .Details {
+        display: block;
+        height: 0;
+        padding: 0%;
+        overflow: hidden;
+        line-height: 3vw;
+        transition: all .3s ease;
+    }
+
+    .CardItem .Details.invisible {
+        color: rgba(0, 0, 0, 0);
+    }
+
+    .CardItem .Button {
+        background-color: #D81B60;
+        color: white;
+        font-size: 1.5vw;
+        padding: 1% 2% 1% 2%;
+        margin: 0% 0% 0% 2%;
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+    }
+
+    .CardItem .Details ul {
+        list-style-type: circle;
+    }
+
+    .CardItem {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2vw;
+        margin: 3%;
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        transition: all .3s ease;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .LeftSide {
+        float: left;
+    }
+
+    .RightSide {
+        float: right;
+    }
+}
